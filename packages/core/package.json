@@ -1,0 +1,26 @@
+{
+  "name": "@animalcase-js/core",
+  "version": "1.0.0",
+  "description": "> TODO: description",
+  "author": "George Suntres <gsuntres@gmail.com>",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "test": "mocha -r chai/register-assert",
+    "clean": "rimraf dist",
+    "build": "npm run clean ; rollup --config"
+  },
+  "dependencies": {
+    "camelize": "^1.0.0",
+    "decamelize": "^5.0.0"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "name": "@animalcase-js/express",
+  "version": "1.0.0",
+  "description": "Express Middleware",
+  "author": "George Suntres <gsuntres@gmail.com>",
+  "homepage": "",
+  "license": "ISC",
+  "main": "lib/express.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "dependencies": {
+    "@animalcase-js/core": "^1.0.0"
+  }
+}
