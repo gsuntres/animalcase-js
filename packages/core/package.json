@@ -1,7 +1,7 @@
 {
   "name": "@animalcase-js/core",
   "version": "1.0.0",
-  "description": "> TODO: description",
+  "description": "Core lib",
   "author": "George Suntres <gsuntres@gmail.com>",
   "license": "MIT",
   "main": "lib/index.js",

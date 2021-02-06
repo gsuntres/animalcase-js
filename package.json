@@ -4,10 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "clean": "lerna run clean --stream"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "George Suntres <gsuntres@protonmail.com>",
+  "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.12.13",
     "@babel/preset-env": "^7.12.13",
