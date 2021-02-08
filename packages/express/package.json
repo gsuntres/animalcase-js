@@ -1,6 +1,6 @@
 {
   "name": "@animalcase-js/express",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Express Middleware",
   "author": "George Suntres <gsuntres@gmail.com>",
   "homepage": "",
@@ -19,6 +19,6 @@
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "dependencies": {
-    "@animalcase-js/core": "^1.0.2"
+    "@animalcase-js/core": "^1.0.3"
   }
 }
