@@ -53,7 +53,6 @@ class CaseConvert {
    */
   convertToSnakeCase(o) {
     this._deepIterate(o, (obj, key) => {
-      debugger
       const newKey = decamelize(key, { preserveConsecutiveUppercase: true })
       if(newKey !== key) {
         delete Object.assign(obj, { [newKey]: obj[key] })[key]
