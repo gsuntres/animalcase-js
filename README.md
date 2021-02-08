@@ -1,5 +1,3 @@
-# `@animalcase-js/core`
-
 ## Overview
 
 A library to convert object's keys from came case to snake case and vice versa.
@@ -11,6 +9,14 @@ A library to convert object's keys from came case to snake case and vice versa.
 ```bash
 npm i --save @animalcase-js/core
 ```
+
+```@animalcase-js/express``` a  middleware for express.js
+
+```bash
+npm i --save @animalcase-js/express
+```
+
+
 
 ## Usage
 

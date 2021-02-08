@@ -6,12 +6,12 @@ import camelCase from 'camelcase'
  * Converts camelCase to snake_case and vise versa.
  * @class
  */
-class CaseFilter {
+class CaseConvert {
 
   /**
    * Function should ignore any processing when the newKey is the same as the old one.
    *
-   * @param {CaseFilter~operateOnKeyFunc} operateOnKeyFunc
+   * @param {CaseConvert~operateOnKeyFunc} operateOnKeyFunc
    */
   _deepIterate(obj, operateOnKeyFunc) {
     if(Array.isArray(obj)) {
@@ -64,12 +64,12 @@ class CaseFilter {
   }
 }
 
-export default new CaseFilter()
+export default new CaseConvert()
 
 /**
  * Callback Change the key of the provided object.
  *
- * @callback CaseFilter~operateOnKeyFunc
+ * @callback CaseConvert~operateOnKeyFunc
  * @param {object} obj The object that has the key. This operation expects to mutate the object.
  * @param {string} key Property's key to mutate
  * @returns {string} The new key

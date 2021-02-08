@@ -1,4 +1,4 @@
-import core from '@animalcase-js/core'
+const core = require('@animalcase-js/core')
 
 module.exports = expressMiddleware
 
