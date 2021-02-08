@@ -1,0 +1,27 @@
+{
+  "name": "@animalcase-js/sandbox",
+  "version": "1.0.2",
+  "description": "A Sandbox",
+  "author": "George Suntres <gsuntres@protonmail.com>",
+  "homepage": "https://github.com/gsuntres/animalcase-js#readme",
+  "private": true,
+  "directories": {
+    "lib": "lib"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gsuntres/animalcase-js.git"
+  },
+  "scripts": {
+    "start": "node ."
+  },
+  "bugs": {
+    "url": "https://github.com/gsuntres/animalcase-js/issues"
+  },
+  "dependencies": {
+    "@animalcase-js/express": "^1.0.2"
+  }
+}

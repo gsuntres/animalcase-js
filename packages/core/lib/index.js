@@ -55,7 +55,6 @@ class CaseConvert {
     this._deepIterate(o, (obj, key) => {
       debugger
       const newKey = decamelize(key, { preserveConsecutiveUppercase: true })
-      console.log(`${key} -> ${newKey}`)
       if(newKey !== key) {
         delete Object.assign(obj, { [newKey]: obj[key] })[key]
       }

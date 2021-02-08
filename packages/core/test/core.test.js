@@ -29,7 +29,7 @@ describe('CaseFitler', function() {
     })
   })
 
-  it.only('casefilter#convertToSnakeCase', function() {
+  it('casefilter#convertToSnakeCase', function() {
     const camel = {
       myKey: 1,
       myNameHere: 'George',

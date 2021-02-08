@@ -5,10 +5,10 @@ import commonjs from '@rollup/plugin-commonjs'
 export default {
   input: 'lib/index.js',
   output: [{
-    file: 'dist/bundle-cjs.js',
+    file: 'dist/index.js',
     format: 'cjs'
   }, {
-    file: 'dist/bundle-es.js',
+    file: 'dist/index.mjs',
     format: 'es'
   }],
   plugins: [
