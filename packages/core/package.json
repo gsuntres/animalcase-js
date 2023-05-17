@@ -1,27 +1,43 @@
 {
   "name": "@animalcase-js/core",
-  "version": "1.0.4",
+  "version": "1.1.0",
   "description": "Core lib",
   "author": "George Suntres <gsuntres@gmail.com>",
   "license": "MIT",
-  "main": "dist/index.js",
+  "type": "module",
+  "main": "dist/animalcase.core.js",
+  "module": "dist/animalcase.core.esm.js",
+  "types": "index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "import": {
+        "default": "./dist/animalcase.core.mjs"
+      },
+      "module": "./dist/animalcase.core.esm.js",
+      "default": "./dist/animalcase.core.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "sideEffects": false,
   "directories": {
-    "lib": "lib"
+    "lib": "src"
   },
   "files": [
-    "lib"
+    "dist",
+    "index.d.ts",
+    "src/**/*.d.ts"
   ],
   "publishConfig": {
     "access": "public"
   },
   "scripts": {
-    "test": "mocha -r chai/register-assert",
-    "clean": "rimraf dist",
-    "build": "npm run clean ; rollup --config",
+    "test": "jest test",
+    "build": "NODE_ENV=build rollup -c",
     "prepublishOnly": "npm run build"
   },
   "dependencies": {
-    "camelize": "^1.0.0",
+    "camelize-keys": "^1.0.0",
     "decamelize": "^5.0.0"
   }
 }

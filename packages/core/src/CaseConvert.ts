@@ -1,19 +1,19 @@
 import decamelize from 'decamelize'
-import camelCase from 'camelcase'
+import camelcaseKeys from 'camelcase-keys'
 
 
 /**
  * Converts camelCase to snake_case and vise versa.
  * @class
  */
-class CaseConvert {
+export class CaseConvert {
 
   /**
    * Function should ignore any processing when the newKey is the same as the old one.
    *
    * @param {CaseConvert~operateOnKeyFunc} operateOnKeyFunc
    */
-  _deepIterate(obj, operateOnKeyFunc) {
+  _deepIterate(obj: any, operateOnKeyFunc: (obj: any, key: string) => string) {
     if(Array.isArray(obj)) {
       obj.forEach((entry) => {
         if(typeof entry === 'object') {
@@ -35,14 +35,9 @@ class CaseConvert {
    *
    * @param {object} o Object to mutate
    */
-  convertToCamelCase(o) {
-    this._deepIterate(o, (obj, key) => {
-      const newKey = camelCase(key)
-      if(newKey !== key) {
-        delete Object.assign(obj, { [newKey]: obj[key] })[key]
-      }
-
-      return newKey
+  convertToCamelCase(o: any): any {
+    return camelcaseKeys(o, {
+      deep: true
     })
   }
 
@@ -51,7 +46,7 @@ class CaseConvert {
    *
    * @param {object} o Object to mutate
    */
-  convertToSnakeCase(o) {
+  convertToSnakeCase(o: any) {
     this._deepIterate(o, (obj, key) => {
       const newKey = decamelize(key, { preserveConsecutiveUppercase: true })
       if(newKey !== key) {
@@ -61,8 +56,6 @@ class CaseConvert {
     })
   }
 }
-
-export default new CaseConvert()
 
 /**
  * Callback Change the key of the provided object.

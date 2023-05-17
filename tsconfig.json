@@ -1,0 +1,21 @@
+{
+    "compilerOptions": {
+      "target": "es2021",
+      "lib": ["ES2021"],
+      "skipLibCheck": true,
+      "moduleResolution": "node",
+      "noEmit": true,
+      "forceConsistentCasingInFileNames": true,
+      "strict": true,
+      "noUnusedLocals": true,
+      "allowJs": true,
+      "esModuleInterop": true
+    },
+    "include": [
+      "packages/**/src/**/*.ts"
+    ],
+    "exclude": [
+      "node_modules"
+    ]
+  }
+  
