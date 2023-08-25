@@ -31,9 +31,9 @@ export class CaseConvert {
   }
 
   /**
-   * Convert to camel case. This function mutates the original object
+   * Convert to camel case. This function returns the changed object
    *
-   * @param {object} o Object to mutate
+   * @param {object} o Object to change
    */
   convertToCamelCase(o: any): any {
     return camelcaseKeys(o, {
