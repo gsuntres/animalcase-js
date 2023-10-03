@@ -1,11 +1,11 @@
 {
   "name": "@animalcase-js/core",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Core lib",
   "author": "George Suntres <gsuntres@gmail.com>",
   "license": "MIT",
   "type": "module",
-  "main": "dist/animalcase.core.js",
+  "main": "dist/animalcase.core.cjs",
   "module": "dist/animalcase.core.esm.js",
   "types": "index.d.ts",
   "exports": {
@@ -15,7 +15,7 @@
         "default": "./dist/animalcase.core.mjs"
       },
       "module": "./dist/animalcase.core.esm.js",
-      "default": "./dist/animalcase.core.js"
+      "default": "./dist/animalcase.core.umd.js"
     },
     "./package.json": "./package.json"
   },

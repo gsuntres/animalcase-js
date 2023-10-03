@@ -24,6 +24,13 @@ const bundles = [
   {
     input,
     output: {
+      file: 'dist/animalcase.core.cjs',
+      format: 'cjs'
+    }
+  },
+  {
+    input,
+    output: {
       name: 'ANIMALCASE_CORE',
       file: 'dist/animalcase.core.js',
       format: 'umd',
