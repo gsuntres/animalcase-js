@@ -1,3 +1,5 @@
+Archiving since there are better alternatives out there, like [case-anything](https://github.com/mesqueeb/case-anything).
+
 ## Overview
 
 A library to convert object's keys from came case to snake case and vice versa.
